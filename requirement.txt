@@ -1,0 +1,5 @@
+sqlalchemy 
+numpy
+pandas
+os
+shutil
