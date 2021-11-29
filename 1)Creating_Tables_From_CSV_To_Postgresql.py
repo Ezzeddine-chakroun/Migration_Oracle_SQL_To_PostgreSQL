@@ -3,7 +3,7 @@ import os
 from sqlalchemy import create_engine
 import sqlalchemy as sa
 
-path_to_tables = "New_Tous_Tables"
+path_to_tables = "New_Tables"
 list_files = os.listdir(path_to_tables)
 i=0
 def creating_tables(dbschema,username,password,hostname,port):
