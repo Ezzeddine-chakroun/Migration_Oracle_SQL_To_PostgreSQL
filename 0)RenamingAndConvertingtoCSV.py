@@ -4,8 +4,8 @@ import shutil
 import pandas as pd
 
 import numpy as np
-path_to_tables = "Tous_Tables"
-new_path = "New_Tous_Tables"
+path_to_tables = "All_Tables"
+new_path = "New_Tables"
 list_files = os.listdir(path_to_tables)
 i=0
 new_requests=[]
