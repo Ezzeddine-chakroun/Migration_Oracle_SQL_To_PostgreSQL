@@ -15,10 +15,6 @@ def creating_tables(dbschema,username,password,hostname,port):
         df.columns = [c.lower() for c in df.columns] #postgres doesn't like capitals or spaces
         engine = create_engine('postgresql://'+username+':'+password+'@'+hostname+':'+str(port)+'/bdax040',
         connect_args={'options': '-csearch_path={}'.format(dbschema)})
-        #print(file.split(".")[0])
-        #insp = sa.inspect(engine)
-        #db_list = insp.get_schema_names()
-        #print(db_list)
         try:
             df.to_sql(file.split(".")[0], engine)
         except:
